@@ -2,15 +2,18 @@
 
   peopleArray = [{
     name: 'Bob',
-    job_title: "builder"
+    job_title: "builder",
+    boss: "Jacob"
   },
   {
     name: "Fred",
-    job_title: "construction worker"
+    job_title: "construction worker",
+    boss: "Jacob"
   },
   {
     name: "A-Aron",
-    job_title: "student"
+    job_title: "student",
+    boss: "Jacob"
   },
   {
     name: "Jacob",
@@ -18,12 +21,23 @@
   }
   ];
 
+for (var i=0; i<peopleArray.length; i++){
+  if (peopleArray[i]["boss"]){
+    console.log(`${peopleArray[i].job_title} ${peopleArray[i].name} reports to ${peopleArray[i].boss}.`);
+  } else {
+    console.log(`${peopleArray[i].job_title} ${peopleArray[i].name} reports to nobody!`);
+  }
+}
+
+
+
+
   // for (var person in peopleArray){
   //   console.log(this.name + " " + this.job_title);
   // };
 
-  for (var i=0; i<peopleArray.length; i++){
-    console.log(peopleArray[i].name + " " + peopleArray[i].job_title);
-  }
+  // for (var i=0; i<peopleArray.length; i++){
+  //   console.log(peopleArray[i].name + " " + peopleArray[i].job_title);
+  // }
 
 </script>
