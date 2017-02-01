@@ -1,0 +1,11 @@
+var myObject = {
+  foo : "foo",
+  bar : "bar",
+  fum : "fum",
+  quux : 42,
+  spam : "delicious"
+};
+
+for (var key in myObject){
+  console.log(key + " " + myObject[key]);
+}
