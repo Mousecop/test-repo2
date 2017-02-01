@@ -1,0 +1,28 @@
+<script>
+function decode(str) {
+  var myObj = {
+    a: 1,
+    b: 2,
+    c: 3,
+    d: 4
+  };
+	var decodedMessage = '';
+	var wordSplit = str.split(' ').map(function(currentWord) {
+		var firstLetter = currentWord[0];
+		if (myObj[firstLetter]) {
+			decodedMessage += currentWord[myObj[firstLetter]];
+		}
+		else {
+			decodedMessage += ' ';
+		}
+	});
+console.log(decodedMessage);
+}
+decode('craft block argon meter bells brown croon droop');
+
+
+
+
+
+
+</script>
